@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-ci-lab
+  namespace: python-ci-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-ci-lab
+  template:
+    metadata:
+      labels:
+        app: python-ci-lab
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/perolasanta/python-ci-lab:latest
+          imagePullPolicy: Always
