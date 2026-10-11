@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/perolasanta/python-ci-lab:latest
+          image: ghcr.io/perolasanta/python-ci-lab:sha-884c98c8e5f2b25a87257eb3879f4408c5b50b55
           imagePullPolicy: Always
           ports:
             - name: http
