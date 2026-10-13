@@ -4,4 +4,4 @@ metadata:
   name: python-ci-lab-config
   namespace: python-ci-lab
 data:
-  APP_MESSAGE: "Hello from my Kubernetes ConfigMap!"
+  APP_MESSAGE: "Welcome! Configuration changed through GitOps."
