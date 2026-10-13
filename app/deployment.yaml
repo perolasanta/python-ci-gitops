@@ -22,7 +22,7 @@ spec:
               containerPort: 8080
           envFrom:
             - configMapRef:
-              name: python-ci-lab-config
+                name: python-ci-lab-config
           readinessProbe:
             httpGet:
               path: /health
