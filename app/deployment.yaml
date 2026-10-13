@@ -10,6 +10,8 @@ spec:
       app: python-ci-lab
   template:
     metadata:
+      annotations:
+        rollout-trigger: "config-update-2026-10-13"
       labels:
         app: python-ci-lab
     spec:
