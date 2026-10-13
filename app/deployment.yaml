@@ -21,7 +21,7 @@ spec:
             - name: http
               containerPort: 8080
           envFrom:
-            configMapRef:
+            - configMapRef:
               name: python-ci-lab-config
           readinessProbe:
             httpGet:
