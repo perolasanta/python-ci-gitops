@@ -25,6 +25,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: python-ci-lab-config
+            - secretRef:
+                name: python-ci-lab-secret
           readinessProbe:
             httpGet:
               path: /health
